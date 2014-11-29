@@ -1,5 +1,5 @@
 
-var arduino = require('../');
+var arduino = require('duino');
 var util = require('util');
 
 var board = new arduino.Board({
