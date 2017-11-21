@@ -35,7 +35,7 @@ try {
   }
 } catch(Error|Exception e) {
   mail(to: 'EMAIL@example.com',
-       subject: "${currentBuild.fullDisplayName} failed!"
+       subject: "${currentBuild.fullDisplayName} failed!",
        body: "URL: ${env.BUILD_URL}, Error: ${e}")
   //Finish failing the build after telling someone about it
   throw e
